@@ -49,3 +49,22 @@ public class ExaminationProcessingSystem {
         for (int i = 0; i < s.marks.length; i++) {
             sum += s.marks[i];
         }
+        s.average = sum / 5.0;
+
+        if (s.average >= 70) {
+            s.grade = "A";
+            s.comment = "Excellent";
+        } else if (s.average >= 60) {
+            s.grade = "B";
+            s.comment = "Good";
+        } else if (s.average >= 50) {
+            s.grade = "C";
+            s.comment = "Average";
+        } else if (s.average >= 40) {
+            s.grade = "D";
+            s.comment = "Below Average";
+        } else {
+            s.grade = "F";
+            s.comment = "Poor";
+        }
+    }
