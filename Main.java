@@ -68,3 +68,11 @@ public class ExaminationProcessingSystem {
             s.comment = "Poor";
         }
     }
+    public static void showReport(Student s) {
+        System.out.println("\n--- Report ---");
+        System.out.println("Name: " + s.name);
+        System.out.println("ID: " + s.id);
+
+        for (int i = 0; i < s.marks.length; i++) {
+            System.out.println("Subject " + (i + 1) + ": " + s.marks[i]);
+        }
