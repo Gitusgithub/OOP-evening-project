@@ -36,4 +36,7 @@ public class ExaminationProcessingSystem {
                 System.out.println("Enter marks for subject " + (j + 1) + ":");
                 students[i].marks[j] = input.nextInt();
             }
-            input.nextLine(); // to clear buffer
+            input.nextLine(); 
+            // Calculating average marks and grade of teh students
+            calculate(students[i]);
+            
