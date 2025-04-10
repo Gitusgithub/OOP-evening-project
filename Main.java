@@ -39,4 +39,6 @@ public class ExaminationProcessingSystem {
             input.nextLine(); 
             // Calculating average marks and grade of teh students
             calculate(students[i]);
-            
+            // Displaying and showing of the report
+            showReport(students[i]);
+        }
