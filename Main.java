@@ -76,3 +76,10 @@ public class ExaminationProcessingSystem {
         for (int i = 0; i < s.marks.length; i++) {
             System.out.println("Subject " + (i + 1) + ": " + s.marks[i]);
         }
+        System.out.println("Average: " + s.average);
+        System.out.println("Grade: " + s.grade);
+        System.out.println("Comment: " + s.comment);
+        System.out.println("Date: " + LocalDate.now());
+        System.out.println("--------------------\n");
+    }
+}
