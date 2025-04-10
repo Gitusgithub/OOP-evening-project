@@ -42,3 +42,5 @@ public class ExaminationProcessingSystem {
             // Displaying and showing of the report
             showReport(students[i]);
         }
+        input.close();
+    }
