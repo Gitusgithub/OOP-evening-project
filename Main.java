@@ -44,3 +44,8 @@ public class ExaminationProcessingSystem {
         }
         input.close();
     }
+    public static void calculate(Student s) {
+        int sum = 0;
+        for (int i = 0; i < s.marks.length; i++) {
+            sum += s.marks[i];
+        }
