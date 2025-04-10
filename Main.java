@@ -22,3 +22,12 @@ public class ExaminationProcessingSystem {
         Scanner input = new Scanner(System.in);
 
         Student[] students = new Student[10]; 
+         // Reading of the details of students
+         for (int i = 0; i < 10; i++) {
+            System.out.println("Enter student " + (i + 1) + " name:");
+            String name = input.nextLine();
+
+            System.out.println("Enter student " + (i + 1) + " ID:");
+            String id = input.nextLine();
+
+            students[i] = new Student(name, id);
