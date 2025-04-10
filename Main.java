@@ -31,3 +31,9 @@ public class ExaminationProcessingSystem {
             String id = input.nextLine();
 
             students[i] = new Student(name, id);
+            // Getting of the marks
+            for (int j = 0; j < 5; j++) {
+                System.out.println("Enter marks for subject " + (j + 1) + ":");
+                students[i].marks[j] = input.nextInt();
+            }
+            input.nextLine(); // to clear buffer
